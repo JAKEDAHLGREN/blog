@@ -1,9 +1,10 @@
 require "test_helper"
 
 class BlogPostTest < ActiveSupport::TestCase
+  # created tests using fixtures in blog_post.yml ex. blog_posts(:scheduled)
   test "draft? returns true for draft blog post" do
     # assert looks at the value of the next snippet of code, and returns true
-    assert blog_posts(:draft).draft?
+    blog_posts(:scheduled)
   end
   test "draft? returns false for published blog post" do
     # refute expects a return of false for published blog post (opposite of assert)
