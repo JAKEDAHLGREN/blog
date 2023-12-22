@@ -112,4 +112,16 @@ deploying on render
     - $bundle install; bundle exec rake assets:precompile; bundle exec rake assets:clean;
 - start command
     - $ bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}
+
+Schedule a blog post
+- option 1
+    - 'status' string field
+        - draft
+        - published
+        - scheduled (does not give exact time to publish)
+-option 2
+    - 'published_at' datetime field (this will give a specific time to publish the post so it is visible to the user)
+        - nil (not published)
+        - 1.year.ago
+        - 1.year.from_now 
  -->

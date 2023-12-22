@@ -5,6 +5,11 @@
         <div class="bg-gray-100/75 px-2 pb-8 rounded-lg border-2 my-4">
             <!-- link_to will make the title clickable and direct you to the show page for the blog_post with that id # refer to routes to see why you don't need to ad the id or path because it is an active record object, in the rails console you can say BlogPost.model_name and it will give you all of the active record naming conventions for the class name -->
             <h2><%= link_to blog_post.title, blog_post %></h2>
+            <% if blog_post.draft? %>
+            <div class="p-2 rounded bg-blue-300 text-gray-900 w-[55px]">Draft</div>
+            <% elsif blog_post.scheduled? %>
+            <div class="p-2 rounded bg-green-300 text-gray-900 w-[100px]">Scheduled</div>
+            <% end %>
             <%= blog_post.body %>
             <br>
             <%= link_to 'Show Blog', blog_post, class:"p-2 bg-blue-600 text-white round-lg hover:bg-blue-300" %>
