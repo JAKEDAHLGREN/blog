@@ -7,9 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-BlogPost.create(title:'blog 6', body: 'This is a blog post')
-BlogPost.create(title:'blog 7', body: 'This is a blog post')
-BlogPost.create(title:'blog 8', body: 'This is a blog post')
+BlogPost.create(title:'blog 6', content: 'This is a blog post')
+BlogPost.create(title:'blog 7', content: 'This is a blog post')
+BlogPost.create(title:'blog 8', content: 'This is a blog post')
 
 user= User.where(email: "jake.dahlgrendev@gmail.com").first_or_initialize
 user.update!(
