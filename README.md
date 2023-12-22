@@ -103,4 +103,13 @@ pushing your directory into a github repository
     - $ git remote add origin https://github.com/JAKEDAHLGREN/blog.git
     - $ git branch -M main
     - $ git push -u origin main
+
+deploying on render
+- create a web service
+- connect repo 
+- name project
+- build command
+    - $bundle install; bundle exec rake assets:precompile; bundle exec rake assets:clean;
+- start command
+    - $ bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}
  -->
