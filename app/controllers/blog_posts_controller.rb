@@ -54,7 +54,7 @@ class BlogPostsController < ApplicationController
     private
 # strong params that requires the blog post to have a title and body before it can be saved/updated
     def blog_post_params
-        params.require(:blog_post).permit(:title, :body, :published_at)
+        params.require(:blog_post).permit(:title, :content, :published_at)
     end
 
     def set_blog_post

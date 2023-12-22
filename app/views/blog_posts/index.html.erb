@@ -10,7 +10,7 @@
             <% elsif blog_post.scheduled? %>
             <div class="p-2 rounded bg-green-300 text-gray-900 w-[100px]">Scheduled</div>
             <% end %>
-            <%= blog_post.body %>
+            <%= blog_post.content %>
             <br>
             <%= link_to 'Show Blog', blog_post, class:"p-2 bg-blue-600 text-white round-lg hover:bg-blue-300" %>
         </div>

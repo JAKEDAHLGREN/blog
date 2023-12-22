@@ -124,4 +124,7 @@ Schedule a blog post
         - nil (not published)
         - 1.year.ago
         - 1.year.from_now 
+
+Action text - rails option that allows you to write bold, italics, links, embedded images, files, etc
+    - $ rails action_text:install
  -->
