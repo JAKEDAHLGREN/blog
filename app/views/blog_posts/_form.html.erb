@@ -1,0 +1,21 @@
+<%= form_with model: @blog_post do |form| %>
+<!-- checks if there are any errors and generates an error message if the fields are empty (based on validations) -->
+<% if form.object.errors.any? %>
+    <div>
+        <!-- renders the error messages if form is invalid -->
+        <% form.object.errors.full_messages.each do |message| %>
+        <div><%= message %> </div>
+        <% end %>
+    </div>
+<% end %>
+
+<div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+</div>
+<div>
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+</div>
+<%=form.button %>
+<% end %>
