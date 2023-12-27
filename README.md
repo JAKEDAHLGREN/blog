@@ -130,4 +130,7 @@ Action text - rails option that allows you to write bold, italics, links, embedd
 
 Pagination using Pagy
     - 
+
+Cover Image to Blog Post (with active storage)
+    - 
  -->
