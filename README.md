@@ -127,4 +127,7 @@ Schedule a blog post
 
 Action text - rails option that allows you to write bold, italics, links, embedded images, files, etc
     - $ rails action_text:install
+
+Pagination using Pagy
+    - 
  -->
